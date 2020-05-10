@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('forms/bug', 'BugFormController@show');
-Route::post('forms/bug', 'BugFormController@submit');
+Route::get('', 'HomeController@index');
+Route::get('forms/bug', 'Forms\BugFormController@show');
+Route::post('forms/bug', 'Forms\BugFormController@submit');

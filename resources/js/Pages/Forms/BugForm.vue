@@ -5,7 +5,7 @@
                 <div class="px-6 py-4 divide-y divide-gray-100">
                     <div class="flex justify-around">
                         <img class="w-1/3"
-                             src="https://media.discordapp.net/attachments/505801044584955934/708416858851901472/AverionMC2logo.png"
+                             src="/img/logo.png"
                              alt="AverionMC Logo">
                         <div class="my-auto">
                             <div class="font-bold text-lg mb-2">
@@ -52,7 +52,9 @@
 </template>
 
 <script>
-    import ResponseMessage from "../Shared/ResponseMessage";
+
+
+    import ResponseMessage from "../../Shared/ResponseMessage";
 
     export default {
         components: {

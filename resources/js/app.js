@@ -1,6 +1,7 @@
 require('./bootstrap');
 
 import { InertiaApp } from '@inertiajs/inertia-vue'
+import 'vue-material-design-icons/styles.css';
 import Vue from 'vue'
 
 Vue.use(InertiaApp)

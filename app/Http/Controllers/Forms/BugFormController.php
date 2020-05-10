@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Forms;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\BugFormSubmitRequest;
 use App\Notifications\BugReportNotification;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class BugFormController extends Controller
      */
     public function show()
     {
-        return Inertia::render('BugForm', [
+        return Inertia::render('Forms/BugForm', [
 
         ]);
     }

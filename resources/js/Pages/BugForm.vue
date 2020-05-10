@@ -17,19 +17,19 @@
                     <form @submit.prevent="submit" class="pt-4">
                             <ResponseMessage></ResponseMessage>
                         <div class="mb-4">
-                            <label class="block text-gray-900 text-sm font-bold mb-2" for="name">
+                            <label class="form-label" for="name">
                                 Dein Name
                             </label>
                             <input v-model="form.name"
-                                class="shadow-xs appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-200"
+                                class="form-control"
                                 id="name" type="text" autocomplete="off" placeholder="Dein Name">
                         </div>
                         <div class="mb-4">
-                            <label class="block text-gray-900 text-sm font-bold mb-2" for="message">
+                            <label class="form-label" for="message">
                                 Beschreibung des Bugs
                             </label>
                             <textarea v-model="form.message"
-                                class="shadow-xs appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-200"
+                                class="form-control"
                                 rows="5" id="message" type="text" autocomplete="off"
                                 placeholder="Beschreibe kurz den aufgetretenen Fehler">
 
@@ -37,7 +37,7 @@
                         </div>
                       <div class="text-right">
                           <button
-                              :class="`bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${isLoading ? `opacity-50 cursor-not-allowed` : ''}`"
+                              :class="`btn-submit ${isLoading ? `opacity-50 cursor-not-allowed` : ''}`"
                               :disabled="isLoading"
                               type="submit">
                               {{ isLoading ? 'Lädt...' : 'Absenden' }}
